@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./register.css">
+
+</head>
+
+<body>
+    <div class="container-fluid" id="register-page">
+        <div class="row">
+            <div class="col-sm">
+                <div class="text-center m-0 mt-3">
+                    <img
+                        src="https://www.digital-lync.com/images/digital-lyncs-devops-python-digital-marketing-training-hyderabad.png" />
+                    <h2 style="color: #042D60">Registration Form</h2>
+                </div>
+                <div id="Rfrom" class="p-4 pb-5">
+                    <form>
+
+                        <div class="">
+                            <label for="firstName">Name</label>
+                            <input type="text" class="w-50" id="name" placeholder="Enter Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="empcode">Emp Code</label>
+                            <input type="text" class="w-50" id="empCode" placeholder="Enter EmpCode">
+                        </div>
+
+                        <div class="form-group">
+                            <label class=".space" for="Email">Email address</label>
+                            <input type="email" class="w-50" id="email" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group">
+                            <label class=".space" for="Mobile No">Mobile</label>
+                            <input type="text" class="w-50" id="mobile" placeholder="Enter Username">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="w-50" id="username" placeholder="Enter Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="w-50" id="password" placeholder="Password">
+                        </div>
+                        <div id="Role" class="form-group">
+                            <label for="role">Role</label>
+                            <div id="drop">
+                                <Select id="role">
+                                    <option value="">Select</option>
+                                    <option value="Admin">Admin</option>
+                                    <option value="Sales Person">Sales Person</option>
+                                </Select>
+                            </div>
+                        </div>
+
+                        <div id="submit">
+                            <button type="button" class="btn btn-outline-primary"
+                                onclick="registerUser()">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../bootstrap//js/bootstrap.bundle.js"></script>
+
+    <script src="../script/register.js"></script>
+
+</body>
+
+</html>
